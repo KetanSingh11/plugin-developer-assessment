@@ -21,7 +21,7 @@ mv /etc/sts-agent/conf.d/ntp.yaml.default /etc/sts-agent/conf.d/ntp.yaml.example
 SCRIPT
 
 Vagrant.configure("2") do |config|
-#  config.vm.box = "ubuntu/trusty64"
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/trusty64"
+#  config.vm.box = "ubuntu/xenial64"
   config.vm.provision "shell", inline: $script
 end
